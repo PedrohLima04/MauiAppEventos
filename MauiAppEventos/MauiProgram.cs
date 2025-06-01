@@ -13,6 +13,14 @@ namespace MauiAppEventos
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    //fonte padrão
+
+                    fonts.AddFont("Caveat-Bold.ttf", "CaveatBold");
+                    fonts.AddFont("Caveat-Medium.ttf", "CaveatMedium");
+                    fonts.AddFont("Caveat-Regular.ttf", "CaveatRegular");
+                    fonts.AddFont("Caveat-SemiBold.ttf", "CaveatSemiBold");
+                    fonts.AddFont("Caveat-VariableFont_wght.ttf", "CaveatVariableFontwght");
+                    //fonte Caveat (google fontes)
                 });
 
 #if DEBUG

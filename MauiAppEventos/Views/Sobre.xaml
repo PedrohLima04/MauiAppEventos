@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray400}">
+    <VerticalStackLayout Padding="10" VerticalOptions="Center">
+        <Label 
+            Text="Sobre Nós"
+            FontSize="50"
+            FontFamily="CaveatMedium"
+            TextColor="black"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Frame Padding="10" BackgroundColor="WhiteSmoke" CornerRadius="20">
+            <VerticalStackLayout>
+                <Grid ColumnDefinitions="*, 2*, *" RowDefinitions="*, *, *, *">
+
+                    <Label Text="Cadastro de Eventos" 
+                           Grid.Row="0"  Grid.ColumnSpan="3"
+                           FontAttributes="Bold"
+                           FontSize="22"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Criado com .NET MAUI" 
+                           Grid.Row="1"  Grid.ColumnSpan="3"
+                           FontSize="10"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Desenolvido por: Pedro Henrique" 
+                           Grid.Row="2"  Grid.ColumnSpan="3"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"
+                           Margin="10"/>
+
+                    <Label Text="Desenvolvido em: 05/2025" 
+                           Grid.Row="3"  Grid.ColumnSpan="3"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <Button Text="Voltar" TextColor="black"
+                BackgroundColor="White"
+                BorderColor="black"
+                BorderWidth="0.5"
+                Margin="10"   
+                Clicked="Button_ClickedVoltar"    
+                HorizontalOptions="Center"/>
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
